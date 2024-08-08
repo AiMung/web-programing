@@ -1,2 +1,2 @@
-# l-p-tr-nh-web
+# web programming
 lập trình web của thầy Lê Gia Công -Trường đại học Đà Lạt
