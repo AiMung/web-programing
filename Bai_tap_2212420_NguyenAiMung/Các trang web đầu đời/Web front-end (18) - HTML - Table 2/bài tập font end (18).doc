@@ -1,0 +1,44 @@
+1.1.4       Câu hỏi ôn tập
+Câu 1. How do you create a header cell?
+
+A. Using <tr> tag
+
+B. Using <thead> tag
+
+C. Using <th> tag
+
+D. Using <td> tag
+Đáp án: C
+
+Câu 2. The _____ tag defines a standard data cell in an HTML table
+
+A. <tr>
+
+B. <th>
+
+C. <dc>
+
+D. <td>
+Đáp án:D
+
+Câu 3. The colspan _____ defines the number of columns a cell should span
+
+A. attribute
+
+B. tag
+
+C. element
+
+D. document
+Đáp án:A
+
+Câu 4. The ____ tag is used to group header content in an HTML table.
+
+A. <th>
+
+B. <tr>
+
+C. <td>
+
+D. <thead>
+Đáp án:D

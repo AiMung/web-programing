@@ -1,0 +1,172 @@
+<!-- <!DOCTYPE html>
+
+<html><head></head>
+
+<body>
+
+  <p>Một số kiến thức cần học web front-end:</p>
+
+  <ul>
+
+    <li>HTML</li>
+
+    <li>CSS</li>
+
+    <li>JavaScript</li>
+
+    <li>React</li>
+
+  </ul>
+
+</body>
+
+</html> -->
+
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head></head>
+
+<body>
+
+            <h1>Minh họa một khung hiển thị độc lập</h1>
+
+            <iframe src="danh-sach.html" width="400" height="250">
+
+                        Trình duyệt của bạn không hỗ trợ iframe. Xem nội dung của Danh sách tại đây <a href="danh-sach.html">Danh
+
+                                    sách</a></iframe>
+                                    <video src="canonind.mp4" width="640" height="480" poster="canonind.jpg" controls autoplay>
+
+                                        Trình duyệt của bạn không hỗ trợ HTML5 video. Vui lòng bấm vào đây để xem <a href="canonind.mp4">MP4 video</a>
+                                
+                                    </video>
+                                    <video id="video" controls poster="img/poster.jpg">
+
+                                        <source src="clip.webm" type="video/webm">
+                                    
+                                        <source src="clip.mp4" type="video/mp4">
+                                    
+                                        <source src="clip.ogg" type="video/ogg">
+                                    
+                                        <a href="clip.mp4">Download the MP4 of the clip.</a>
+                                    
+                                    </video>
+                                    <audio controls>
+
+                                        <source src="horse.ogg" type="audio/ogg">
+                                    
+                                        <source src="horse.mp3" type="audio/mpeg">
+                                    
+                                       Trình duyệt không hỗ trợ chức năng này.
+                                    
+                                      </audio>
+                                      <canvas width="600" height="400" id="canvas-dau-tien">
+
+                                        Trinh duyet khong ho tro Canvas. Ban nen su dung trinh duyet Chrome, Firefox hoac MS Edge.
+                
+                            </canvas>
+                            <script type="text/javascript">
+
+                                window.addEventListener('load', eventWindowLoaded, false);
+                        
+                                function eventWindowLoaded() {
+                        
+                                    canvasApp();
+                        
+                                }
+                        
+                                function canvasApp() {
+                        
+                                    var theCanvas = document.getElementById('canvas-dau-tien');
+                        
+                                    var my_canvas = theCanvas.getContext('2d');
+                        
+                                    my_canvas.strokeRect(0, 0, 200, 225)
+                        
+                                    // to start, draw a border around the canvas
+                        
+                                    //draw face
+                        
+                                    my_canvas.beginPath();
+                        
+                                    my_canvas.arc(100, 100, 75, (Math.PI / 180) * 0, (Math.PI / 180) * 360, false);
+                        
+                                    // circle dimensions
+                        
+                                    my_canvas.strokeStyle = "black"; // circle outline is black
+                        
+                                    my_canvas.lineWidth = 3; // outline is three pixels wide
+                        
+                                    my_canvas.fillStyle = "yellow"; // fill circle with yellow
+                        
+                                    my_canvas.stroke(); // draw circle
+                        
+                                    my_canvas.fill(); // fill in circle
+                        
+                                    my_canvas.closePath();
+                        
+                                    // now, draw left eye
+                        
+                                    my_canvas.fillStyle = "black"; // switch to black for the fill
+                        
+                                    my_canvas.beginPath();
+                        
+                                    my_canvas.arc(65, 70, 10, (Math.PI / 180) * 0, (Math.PI / 180) * 360, false);
+                        
+                                    // circle dimensions
+                        
+                                    my_canvas.stroke(); // draw circle
+                        
+                                    my_canvas.fill(); // fill in circle
+                        
+                                    my_canvas.closePath();
+                        
+                                    // now, draw right eye
+                        
+                                    my_canvas.beginPath();
+                        
+                                    my_canvas.arc(135, 70, 10, (Math.PI / 180) * 0, (Math.PI / 180) * 360, false);
+                        
+                                    // circle dimensions
+                        
+                                    my_canvas.stroke(); // draw circle
+                        
+                                    my_canvas.fill(); // fill in circle
+                        
+                                    my_canvas.closePath();
+                        
+                                    // draw smile
+                        
+                                    my_canvas.lineWidth = 6; // switch to six pixels wide for outline
+                        
+                                    my_canvas.beginPath();
+                        
+                                    my_canvas.arc(99, 120, 35, (Math.PI / 180) * 0, (Math.PI / 180) * -180, false);
+                        
+                                    // semicircle dimensions
+                        
+                                    my_canvas.stroke();
+                        
+                                    my_canvas.closePath();
+                        
+                                    // Smiley Speaks!
+                        
+                                    my_canvas.fillStyle = "black"; // switch to black for text fill
+                        
+                                    my_canvas.font = '20px _sans'; // use 20 pixel sans serif font
+                        
+                                    my_canvas.fillText("Xin chao canvas!", 45, 200); // write text
+                        
+                                }
+                        
+                            </script>
+                            
+                                    
+
+</body>
+
+</html>

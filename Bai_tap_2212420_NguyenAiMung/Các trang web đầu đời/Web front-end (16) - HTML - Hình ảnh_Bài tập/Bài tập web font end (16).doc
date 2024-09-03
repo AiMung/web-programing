@@ -1,0 +1,47 @@
+1.1.2       Câu hỏi ôn tập
+Câu 1. Phát biểu nào không đúng, khi nói về phần tử img?
+
+A. Img là phần tử kiểu inline
+
+B. src và alt là 2 thuộc tính bắt buộc phải có
+
+C. Trong mọi trường hợp, bạn nên thiết lập sẵn kích thước cố định cho ảnh
+
+D. Bạn có thể sử dụng tính chất cache hình ảnh của trình duyệt, để tăng tốc độ hiển thị trang web.
+Đáp án đúng C, đây là phát biểu không đúng vì Trong mọi trường hợp, bạn nên thiết lập sẵn kích thước cố định cho ảnh:
+Sai, bạn không cần phải luôn thiết lập kích thước cố định cho ảnh. 
+Điều này phụ thuộc vào thiết kế và yêu cầu của trang web. 
+Sử dụng kích thước động hoặc dựa trên phần trăm có thể giúp ảnh hiển thị linh hoạt hơn trên nhiều thiết bị.
+ 
+Câu 2. Trong thuật ngữ “ảnh SVG”, từ SVG là viết tắt của?
+
+A. Satify Vector Graphics
+
+B. Static Vector Graphics
+
+C. Scalable Vector Graphics
+
+D. Scalable Vertical Graphics
+Đáp án: C SVG viết tắt cho Scalable Vector Graphics
+
+Câu 3. Trong phần hiển thị ảnh SVG, có nói tới kĩ thuật “fallbacks”, nó là cái gì?
+
+A. Là kĩ thuật làm mờ ảnh
+
+B. Là kĩ thuật làm rõ ảnh
+
+C. Là kĩ thuật “cache ảnh” trong trình duyệt
+
+D. Là giải pháp dự phòng, trong trường hợp không tải được ảnh SVG
+Đáp án : D  Là giải pháp dự phòng, trong trường hợp không tải được ảnh SVG
+
+Câu 4. Responsive web design is a type of web design that allows web pages to __(1)___ to the screen size of the device that they are being viewed on. This means that whether a user is viewing a web page on a desktop computer, a tablet, or a smartphone, the page will be able to adjust its ___(2)___ in order to provide the best possible experience for that particular device.
+
+A. (1) adapt, (2) HTML document
+
+B. (1) display, (2) HTML document
+
+C. (1) disappear, (2) colors
+
+D. (1) adapt, (2) layout and content
+Đáp án: D (1) adapt, (2) layout and content

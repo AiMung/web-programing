@@ -1,0 +1,44 @@
+1.1.7       Câu hỏi ôn tập
+Câu 1. The _____ HTML element represents a nested browsing context, embedding another HTML page into the current one.
+
+A. <canvas>
+
+B. <iframe>
+
+C. <video>
+
+D. <object>
+Đáp án:B
+
+Câu 2. The HTML _____ element is used to draw graphics on a web page.
+
+A. <iframe>
+
+B. <object>
+
+C. <video>
+
+D. <canvas>
+Đáp án:D
+
+Câu 3. The _____ tag defines a container for an external resource. The external resource can be a web page, a picture, a media player, or a plug-in application.
+
+A. <canvas>
+
+B. <video>
+
+C. <object>
+
+D. <iframe>
+Đáp án:C
+
+Câu 4. The _____ tag defines a container for an external resource, such as a web page, a picture, a media player, or a plug-in application.
+
+A. <canvas>
+
+B. <video>
+
+C. <iframe>
+
+D. <embed>
+Đáp án: D

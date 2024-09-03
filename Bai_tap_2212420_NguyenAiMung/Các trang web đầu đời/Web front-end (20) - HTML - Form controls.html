@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+</head>
+<body>
+    <label>Tỉnh/Thành phố: <input type="text" name="city" id="form-city"
+
+        value="Đà Lạt" maxlength="50"></label>
+        <form action="" method="get">
+
+            <p><label>Nhận xét của bạn về cuốn sách:<br>
+        
+              <em>Cho chúng tôi biết cảm nhận của bạn về cuốn sách này, đây sẽ là những thông tin rất có ích đối với Nhà xuất bản, tác giả và các độc giả khác</em><br>
+                
+              <textarea name="nhan-xet" cols="30" rows="10">Cuốn sách rất có ích cho sinh viên</textarea></label></p>
+        
+        </form>
+        <!-- <form action="" method="get">
+
+            <p><label>Nhận xét của bạn về cuốn sách:<br>
+      
+            <em>Cho chúng tôi biết cảm nhận của bạn về cuốn sách này, đây sẽ là những thông tin rất có ích đối với Nhà xuất bản, tác giả và các độc giả khác</em><br>
+      
+            <textarea name="nhan-xet" cols="30" rows="10" placeholder="Nhận xét không quá 50 từ"></textarea></label></p>
+      
+      </form> -->
+      <label for="form-mat-khau">Mật khẩu:</label>
+
+<input type="password" name="mat-khau" maxlength="8" id="form-mat-khau">
+<form action="" method="get">
+
+    <label for="form-sach">
+
+      Các cuốn sách bạn đã đọc khi là sinh viên:
+
+      <input type="text" list="sach" id="form-sach">
+
+      <datalist id="sach">
+
+        <option value="Khuyến học"></option>
+
+        <option value="Đúng việc"></option>
+
+        <option value="Khởi hành"></option>
+
+        <option value="Trên đường băng"></option>
+
+        <option value="Nhà giả kim"></option>
+
+      </datalist>
+
+    </label>
+
+</form>
+<input type="submit" value="Đăng nhập">
+<input type="image" src="twitter.jpeg" alt="Submit" width="48" height="48">
+
+<input type="reset" value="Làm lại">
+<input type="button" value="Nút bấm">
+<button>Nút bấm</button>
+<input type="radio" name="variable" value="value">
+<fieldset>
+
+    <legend>Bạn bao nhiêu tuổi?</legend>
+
+    <ol>
+
+      <li><label><input type="radio" name="tuoi" value="duoi24" checked> dưới
+
+      24</label></li>
+
+      <li><label><input type="radio" name="tuoi" value="25-34"> 25 tới 34</label></li>
+
+      <li><label><input type="radio" name="tuoi" value="35-44"> 35 tới 44</label></li>
+
+      <li><label><input type="radio" name="tuoi" value="tren45"> 45+</label></li>
+
+    </ol>        
+
+  </fieldset>
+  <fieldset>
+
+    <legend>Thói quen đọc của bạn là gì?</legend>
+
+    <ol>
+
+      <li><label><input type="checkbox" name="nguon" value="sach-giay" checked> sách giấy</label></li>
+
+      <li><label><input type="checkbox" name="nguon" value="ebook" checked> sách điện tử</label></li>
+
+      <li><label><input type="checkbox" name="nguon" value="mang-xa-hoi"> mạng xã hội</label></li>
+
+      <li><label><input type="checkbox" name="nguon" value="nghe-doc"> nghe người khác đọc</label></li>
+
+    </ol>
+
+  </fieldset>
+  <fieldset>
+
+    <legend>Bạn có muốn nhận thông báo khi có sách mới?</legend>
+
+    <ol>
+
+      <li><label><input type="checkbox" name="thong-bao" value="co"> có, đồng ý nhận thông báo vào hộp thư</label></li>
+
+    </ol>
+
+  </fieldset>
+  <p>Trong các quyển sách sau, bạn thích quyển nào nhất?
+
+    <select name="thich-nhat">
+
+      <option value=“khuyen-hoc”>Khuyến học</option>
+
+      <option>Đúng việc</option>
+
+      <option>Khởi hành</option>
+
+      <option>Trên đường băng</option>
+
+      <option>Nhà giả kim</option>
+
+    </select></p>
+    <p>Trong các quyển sách sau, bạn thích quyển nào?
+
+      <select name="thich-nhat" size="4" multiple> <!-- thêm multiple thì có thể chọn nhiều option-->
+  
+        <option>Khuyến học</option>
+  
+        <option selected>Đúng việc</option>
+  
+        <option selected>Khởi hành</option>
+  
+        <option>Trên đường băng</option>
+  
+        <option>Nhà giả kim</option>
+  
+      </select></p>
+      <p>Trong các quyển sách sau, bạn thích quyển nào?
+
+        <select name="thich-nhat" size="7" multiple>
+  
+          <optgroup label="Sách dịch">
+  
+            <option>Khuyến học</option>
+  
+            <option selected>Khởi hành</option>
+  
+            <option>Nhà giả kim</option>
+  
+          </optgroup>
+  
+          <optgroup label="Sách Việt">
+  
+            <option>Trên đường băng</option>
+  
+            <option selected>Đúng việc</option>
+  
+          </optgroup>
+  
+        </select></p>
+        <form action="/client.php" method="POST" enctype="multipart/form-data">
+
+          <label>Gửi ảnh đại diện của bạn
+      
+            <em>(tùy chọn)</em><br>
+      
+            <input type="file" name="photo" size="28"></label>
+      
+      </form>
+      <input type="hidden" name="step" value="1">
+      <label>Số sách bạn đã đọc: <input type="number" name="so-luong" min="0" max="1000"></label>
+      <label>Mức độ hài lòng (0 tới 10): <input type="range" name="hai-long" min="0" max="10" step=".5"></label>
+      <label>Bạn thích màu gì? <input type="color" name="mau"></label>
+</body>
+</html>

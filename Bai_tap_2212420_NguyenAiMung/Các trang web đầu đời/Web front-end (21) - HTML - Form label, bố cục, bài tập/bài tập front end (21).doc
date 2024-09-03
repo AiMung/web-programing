@@ -1,0 +1,68 @@
+Câu 1. A webform, web form or HTML form on a web page allows a user to _____ that is sent to a server for processing.
+
+A. download data
+
+B. create database
+
+C. markup database
+
+D. enter data
+Đáp án: D
+
+Câu 2. Trong quá trình mua hàng online, để người mua hàng lựa chọn hình thức thanh toán (trả tiền mặt khi nhận hàng, chuyển khoản, MoMo...v.v), sử dụng control nào là hợp lý nhất?
+
+A. Checkbox
+
+B. Radio
+
+C. Textarea
+
+D. Button
+Đáp án:B
+
+Câu 3. Khi muốn lấy ý kiến đánh giá, bình luận về một sản phẩm từ người mua hàng, sử dụng control nào là hợp lý nhất?
+
+A. Datalist
+
+B. Label
+
+C. Select
+
+D. Textarea
+Đáp án:D
+
+Câu 4. Khi làm việc với form, để không bị chuyển trang khi bấm nút submit, bạn có thể thiết lập giá trị cho action là:
+
+A. %
+
+B. #
+
+C. @
+
+D. /
+Đáp án:B
+
+Câu 5. Trong form có chứa control <input type="password" name="mat-khau" maxlength="8" id="form-mat-khau">. 
+Vậy, khi gửi form này về web server, mật khẩu của người dùng sẽ chứa trong thuộc tính nào?
+
+A. type
+
+B. name
+
+C. maxlength
+
+D. id
+Đáp án: B
+
+
+Câu 6. Phần tử fieldset được sử dụng để nhóm các control có liên quan đến nhau, 
+để chú thích cho nhóm các control này sử dụng phần tử legend.
+
+A. label
+
+B. group
+
+C. textarea
+
+D. fieldset
+Đáp án:D
