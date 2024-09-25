@@ -21,3 +21,12 @@ Muốn tạo liên kết cho một đoạn văn bản, chỉ việc bao đoạn 
 [Kết quả]
 
 Đoạn mã HTML trên sẽ tạo ra liên kết cho chuỗi “Trang web của Google”, khi người dùng bấm vào chuỗi này, trình duyệt sẽ mở trang web có địa chỉ là “http://www.google.com”.
+Để tạo liên kết cho hình ảnh, chỉ việc bao hình ảnh đó bằng phần tử a, đi kèm là thuộc tính href cho biết nơi được liên kết đến. Mà hình ảnh được tạo ra bằng phần tử img, do vậy thực tế là đặt phần tử img vào trong phần tử a. Ví dụ,
+
+[HTML]
+
+<a href="http://www.google.com"><img src="logo.gif" alt="logo cong ty"></a>
+
+[Kết quả]
+
+Khi người dùng bấm vào hỉnh ảnh trên giao diện trang web, trình duyệt sẽ mở trang web có địa chỉ là “http://www.google.com”.
