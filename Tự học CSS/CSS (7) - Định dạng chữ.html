@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            font-size: 150%;
+            /* Khi đó, nếu phần tử h1, là con của body. Mà body có cỡ 16px, thì h1 sẽ có cỡ chữ là 24px. */
+            
+        }
+        
+        h2 { font-size: 30px; }
+        html { font-size: 100%; }
+        h1 { font-size: 1.5rem; } /* 1.5 x 16px = 24px */
+        /* Đơn vị đo rem, là viết tắt của "root em", 1rem tương đương với kích thước phông chữ của phần tử html. 
+        Nếu kích thước phông chữ của html là 16px, thì 1rem = 16px. */
+        article { font-size: 75% } /* 75% x 16px = 12px */
+
+        h1 { font-size: 150%; } /* 150% x 12px = 18px */
+        dt{
+            /* font-weight: normal;
+            font-style: italic;
+            font-variant: small-caps; */
+            /* font: style weight variant size/line-height font-family */
+            font: 1em sans-serif; 
+        }
+        h3 { font: oblique bold small-caps 1.5em/1.8em Verdana, sans-serif; }
+        h4 { font: bold 1.75em/2 sans-serif; }
+        h1 { color: gray; }
+
+/* h1 { color: #666666; } /* R = 66, G = 66, B = 66 */
+
+/* h1 { color: #666; } /* R = 6, G = 6, B = 6 */
+
+/* h1 { color: rgb(102,102,102); }ngoài ra có thể dùng các cách này để đổi màu cho h1 thành màu xám */
+    </style>
+</head>
+<body>
+    
+    <h1> Hello World.It's me,Ái Mừng</h1>
+    <h2> Hello World.It's me,Ái Mừng</h2>
+    <article>
+        <h1> đây là kích thước 18 px</h1>
+        <!-- Ở đoạn mã trên, phần tử html kế thừa cỡ chữ mặc định của trình duyệt (16px), bằng cách thiết lập font-size: 100%. 
+            Phần tử article là con của html, có cỡ chữ: 75% x 16px = 12px. Phần tử h1 là con của article, có cỡ chữ: 150% x 12px = 18px. -->
+            <p style="font-size: 18px;">đây là kích thước 18px</p>
+    </article>
+    <dt> hey love u</dt>
+    <h3> Nice to meet you</h3>
+    <h4>Nice to meet you</h4>
+</body>
+</html>
