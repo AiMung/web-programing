@@ -1,0 +1,53 @@
+Câu 1. Để thiết lập khoảng lùi của hàng đầu tiên trong một đoạn, sử dụng thuộc tính nào?
+
+A. line-height
+
+B. text-indent
+
+C. text-align
+
+D. text-decoration
+Đáp án: B text-indent
+
+Câu 2. Để thiết lập chiều cao tối thiểu của dòng chữ (line box), sử dụng thuộc tính nào?
+
+A. text-shadow
+
+B. text-align
+
+C. text-transform
+
+D. line-height
+Đáp án D line-height
+
+Câu 3. Để bỏ đường gạch chân của các liên kết, sử dụng thuộc tính nào?
+
+A. text-decoration
+
+B. word-spacing
+
+C. letter-spacing
+
+D. text-align
+Đáp án A text-decoration
+
+Câu 4. Để căn giữa (theo chiều ngang) một đoạn văn bản, sử dụng thuộc tính nào?
+
+A. word-spacing
+
+B. text-transform
+
+C. text-align
+
+D. text-shadow
+Đáp án C text-align
+Câu 5. Để định dạng cách đánh số, đánh dấu đầu dòng cho một danh sách, sử dụng thuộc tính nào?
+
+A. text-shadow
+
+B. list-style-type
+
+C. word-spacing
+
+D. text-decoration
+Đáp án B list-style-type

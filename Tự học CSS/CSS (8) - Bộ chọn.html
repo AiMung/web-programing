@@ -1,0 +1,97 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p,h1,div{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tuyệt vời khi nay là thứ 7</h1>
+    <p>hello cả nhà</p>
+    <div>
+    <fieldset>
+        <label for="title">Bạn cảm thấy thế nào</label>
+    </fieldset>
+    </div>
+    
+    
+</body>
+</html> -->
+<!DOCTYPE html>
+
+<html>
+
+ 
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Selectors</title>
+
+    <style>
+        html{background-color: black;}
+ * { color: red; } /* mọi phần tử đều có chữ màu đỏ */
+ h2 { color:blue;} /* các phần tử h2 có chữ màu đỏ */
+ .greencolor { color: green; } /* phần tử nào có giá trị class là greencolor sẽ có màu xanh */
+ #yellowcolor { color: yellow; } /* phần tử có giá trị ID là yellowcolor sẽ có màu vàng */
+ [class] { color: violet; } /* phần tử có thuộc tính là class sẽ có màu tím, không quan tâm giá trị class là gì */
+ h3, p, #yellowcolor { color: blue } /* các phần tử h3, p và phần tử có id="yellowcolor" sẽ có màu blue*/
+ li em { color: orange }
+ h1 em, h2 em, h3 em { color: aquamarine; }
+ li h3 em { color:gray; }
+ p > em { color: mediumspringgreen; }
+ ul + h2 { color: white; }/*chỉ có một phần tử h2 nằm ngay sau ul mới chịu tác động, trong khi các phần tử h2 khác thì không chịu tác động.*/
+ p.violetcolor { color:gold; }
+   </style>
+
+</head>
+
+ 
+
+<body>
+
+    <h2 class="greencolor">The Back of the New $20</h2>
+
+    <p>Have you seen the "Series <em>2004</em> $20 Notes"? The U.S. Treasury has rolled out yet another revamp of the
+
+        U.S. <a href=""><em>twenty</em></a> dollar bill in an effort to stop those pesky counterfeiters once and for
+
+        all.</p>
+
+    <h2 class="greencolor">The first 20s</h2>
+
+    <ul>
+
+        <li>
+
+            <h3>This is <em>first</em> item</h3>
+
+        </li>
+
+        <li>This is <em>second</em> item</li>
+
+        <li>
+
+            <h2>This is <em>third</em> item</h2>
+
+        </li>
+
+    </ul>
+
+    <h2 id="yellowcolor">Too Many <em>20s</em></h2>
+
+    <p class="violetcolor">The last paragraph</p>
+
+    <h2>Another 20s</h2>
+  
+</body>
+
+ 
+
+</html>
