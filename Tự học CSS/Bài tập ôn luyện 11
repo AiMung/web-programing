@@ -1,0 +1,43 @@
+Câu 1. A _______ is a selector that selects elements that are in a specific state, e.g. they are the first element of their type, or they are being hovered over by the mouse pointer.
+
+A. pseudo-element
+
+B. pseudo-class
+
+C. id
+
+D. class
+Đáp án B
+
+Câu 2. In CSS, a _________ selector applies styles to parts of your document content in scenarios where there isn't a specific HTML element to select.
+
+A. element
+
+B. pseudo-class
+
+C. id
+
+D. pseudo-element
+đáp án D
+
+Câu 3. Ví dụ, mã nguồn HTML có nhiều phần tử img, trong đó có 2 phần tử img với title có giá trị lần lượt là “con gà” và “ vịt con”. Bạn chỉ muốn chọn ra 2 phần tử img này, vậy bạn sẽ sử dụng bộ chọn nào dưới đây:
+
+A. img[title] {border: 3px solid;}
+
+B. img[title~="con"] {border: 3px solid;}
+
+C. img[title|="con"] {border: 3px solid;}
+
+D. img[title="con"] {border: 3px solid;}
+Đáp Án B
+
+Câu 4. Ví dụ, mã nguồn HTML có nhiều phần tử img, trong đó có một số phần tử img có thuộc tính title. Bạn chỉ muốn chọn ra các phần tử img với thuộc tính title đi kèm (mà không quan tâm tới giá trị của thuộc tính), thì bạn sẽ sử dụng bộ chọn nào dưới đây:
+
+A. img[title] {border: 3px solid;}
+
+B. img[title~=*] {border: 3px solid;}
+
+C. img[title|="*"] {border: 3px solid;}
+
+D. img[title="*"] {border: 3px solid;}
+Đáp án A

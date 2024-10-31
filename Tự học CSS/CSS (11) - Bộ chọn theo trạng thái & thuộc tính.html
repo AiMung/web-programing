@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="styleOfEx1.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>1.1       Bộ chọn theo trạng thái & thuộc tính</h1>
+    <p>Như đã biết, trong CSS, các bộ chọn được chia thành 4 loại, gồm: Bộ chọn cơ bản (basic selector), Bộ chọn gộp (grouping selector), Bộ chọn tổ hợp (combinator) và Bộ chọn theo trạng thái (pseudo-class, pseudo-element).
+
+        Trong đó, Bộ chọn theo trạng thái gồm 2 loại:
+        <ul>
+            <li>Bộ chọn lớp giả (pseudo class): chọn “lớp giả” là chọn theo các trạng thái của phần tử, ví dụ a:visited{} sẽ chọn các phần tử a đã được người dùng duyệt qua</li>
+            <li>Bộ chọn phần tử giả (pseudo element): chọn "phần tử giả" là chọn các phần tử không tồn tại một cách tường minh trong tài liệu HTML, ví dụ p::first-line{} chọn hàng đầu tiên của phần tử p </li>
+        </ul>
+        <h2>1.1.1       Bộ chọn lớp giả (pseudo-class)</h2>
+        <p>Có rất nhiều loại bộ chọn pseudo-class, ví dụ:</p>
+        <uL>
+            <li>Bộ chọn pseudo-class cho liên kết</li>
+            <li>Bộ chọn pseudo-class dựa trên thao tác người dùng</li>
+            <li>Bộ chọn pseudo-class dựa trên cấu trúc tài liệu HTML</li>
+            <li>Bộ chọn pseudo-class cho các input của form</li>
+        </uL>
+        <h3>Bộ chọn pseudo-class cho liên kết</h3>
+        <p>Bộ chọn pseudo-class cho liên kết được sử dụng để định dạng các liên kết dựa trên trạng thái của nó. Cụ thể,</p>
+       <ul>
+        <li>:link dùng để định dạng cho liên kết chưa được người dùng bấm vào</li>
+        <li> :visited dùng để định dạng cho liên kết đã được người dùng bấm vào</li>
+       </ul>
+       <p>Ví dụ: mặc định, liên kết người dùng chưa bấm vào sẽ có màu xanh, bấm vào rồi sẽ có màu tím. Tuy nhiên, chúng ta có thể sử dụng CSS để thay đổi màu mặc định của liên kết thành các màu khác,</p>
+    
+       <a  href="https://soundcloud.com/search?q=cham%20hoa">MONO- Chăm Hoa</a>
+          <br>
+          <h3>Bộ chọn pseudo-class dựa trên thao tác người dùng</h3>
+        Phần này sẽ tìm hiểu kĩ hơn về Bộ chọn lớp giả và Bộ chọn phần tử giả. Ngoài ra, chúng ta cũng tìm hiểu thêm về Bộ chọn theo thuộc tính (thuộc Bộ chọn cơ bản).</p>
+        <ul>
+            <li> :focus áp dụng khi người dùng chọn phần tử để nhập nội dung, phần tử được chọn sẽ nổi bật hơn so với các phần tử còn lại, bộ chọn này hay áp dụng cho các ô nhập liệu của form. Ví dụ, ô nhập liệu sau sẽ có nền màu vàng khi người dùng chọn,</li>
+            <li> :hover áp dụng khi người dùng rê con trỏ chuột trên một phần tử, mặc dù có thể áp dụng trên mọi phần tử HTML, tuy nhiên, bộ chọn này hay được áp dụng trên các liên kết, nhằm gây chú ý cho người sử dụng. Ví dụ, liên kết sẽ đổi màu nền khi người dùng rê chuột lên,</li>
+        </ul>
+        <input type="text" id="my">
+        <a>ádasdasdasdasdasdasdasd</a>
+        <a href=" https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes#tree-structural_pseudo-classes">tìm hiểu thêm tại đây về pseudo-class</a>
+        <p>Một số nội dung cần học để làm web front-end</p>
+
+    <ul>
+
+        <li>HTML</li>
+
+        <li>CSS</li>
+
+        <li>JS</li>
+
+        <li>React</li>
+
+    </ul>
+    <div>
+
+        <input type="checkbox" name="my-checkbox" id="opt-in">
+
+        <label for="opt-in">Chọn</label>
+
+    </div>
+    Ngoài 4 bộ chọn chúng ta đã tìm hiểu, còn có nhiều bộ chọn pseudo-class khác. Bạn có thể tìm hiểu thêm ở trên mạng hoặc tại đây:<a href=" https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes">Xem thêm</a>
+    <h2>1.1.2       Bộ chọn phần tử giả (pseudo-element)</h2>
+    <p>Trong CSS, không chỉ có bộ-chọn-lớp-giả (pseudo-class), mà nó còn có bộ-chọn-phần-tử-giả (pseudo-element). Bộ chọn pseudo-element không chọn các phần tử trong tài liệu HTML, cũng không chọn phần tử dựa vào trạng thái của nó, mà sẽ chọn các đối tượng “giả”, dựa vào vị trí hiển thị của các đối tượng trên cửa sổ trình duyệt. Có nhiều bộ chọn pseudo-element, phần này chúng ta sẽ tìm hiểu một số bộ chọn gồm: ::first-line, ::first-letter, ::before và ::after.</p>
+    <p>Bộ chọn ::first-line
+
+        Bộ chọn ::first-line được sử dụng để chọn hàng đầu tiên của một phần tử văn bản (khi văn bản hiển thị trên trình duyệt). Tuy nhiên, với bộ chọn này, chỉ có thể áp dụng được các thuộc tính sau,</p>
+        <ul>
+            <li>color, font, background
+            <li>word-spacing,  letter-spacing, text-decoration</li>
+            <li>vertical-align, text-transform, line-height</li></li>
+        </ul>
+<p>Bộ chọn ::first-letter được sử dụng để chọn kí tự đầu tiên của một phần tử văn bản (khi văn bản hiển thị trên trình duyệt). Tuy nhiên, với bộ chọn này, chỉ có thể áp dụng được các thuộc tính sau,   </p>
+<ul>
+    <li> color, font, text-decoration</li>
+    <li> text-transform, vertical-align, padding</li>
+    <li>  background, margin, line-height</li>
+    <li> border, float, letter-spacing, word-spacing</li>
+</ul>
+<p>Ví dụ, chúng ta sẽ làm nổi chữ cái đầu tiên của một đoạn </p>
+<img title="con vịt" src="https://photo2.tinhte.vn/data/attachment-files/2024/10/8469526_ta-con-vitlop-4.jpg" alt="con vịt">
+   <img  title="con cá" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOBNaByul4BwVGJo7hoCTKFP4gxiOgoFOGhQ&s" alt="">
+   <img  title="con-abtract" src="https://hoanghamobile.com/tin-tuc/wp-content/uploads/2024/04/anh-sieu-nhan-4.jpg" alt="">
+    
+  
+    
+
+</body>
+</html>

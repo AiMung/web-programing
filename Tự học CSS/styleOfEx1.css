@@ -1,0 +1,98 @@
+a:link {
+
+    color: maroon;
+    
+    }
+    
+    a:visited {
+    
+    color: gray;
+    
+    }
+    input:focus { background-color: yellow; }
+    a:hover {
+
+        color: maroon;
+        
+        background-color: #ffd9d9;
+        
+        }
+        a:active {
+
+            color: red;
+            
+            background-color: #ffd9d9;
+            
+            }
+            a { text-decoration: none; } /* bỏ dấu gạch chân */
+
+a:link { color: maroon; }
+
+a:visited { color: gray; }
+
+a:focus { color: maroon; background-color: #ffd9d9; }
+
+a:hover { color: maroon; background-color: #ffd9d9; }
+
+a:active { color: red; background-color: #ffd9d9; }
+li:first-child { color: red; }
+  /* Định dạng label khi người dùng đánh dấu chọn */
+
+  input:checked + label {
+
+    color: red;
+
+}
+
+/* Định dạng ô chọn khi được chọn */
+
+input[type="checkbox"]:checked {
+
+    box-shadow: 0 0 0 3px hotpink;
+
+}
+p::first-line {
+
+    color: red;
+
+  }
+  p::first-letter {
+
+    color: white;
+
+    background-color: #333;
+
+    border-radius: 2px;
+
+    font-size: 200%;
+
+    box-shadow: 3px 3px 0 yellow;
+
+    padding: 6px 3px;
+
+    margin-right: 5px;
+
+}
+p::before {
+
+    content: "Đọc thêm: ";
+
+    color: red;
+
+    font-weight: bold;
+
+  }
+  p::after {
+
+    content: "(Kết thúc)";
+
+    color: red;
+
+    font-weight: bold;
+
+  }
+  img[title~="con"] {border: 3px solid;}
+img[title|="con"] {border: 20px solid; border: black;}
+  img[title="con vịt"] {border: 10px solid;}
+  img[title|="con"] {border: 3px solid;}
+  img[title*="on"] {border: 3px solid;background-color: brown; border-color: blue;}

@@ -1,0 +1,121 @@
+/* sử dụng phông chữ Roboto của Google, vào trang font của Google, lấy đường dẫn về đây */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap');
+
+/* thiết đặt CSS mặc định của trình duyệt về dạng chuẩn - reset CSS */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+ 
+
+body {
+
+    margin: 0.5rem;
+
+    font-family: Roboto, sans-serif;
+
+    text-align: center;
+
+}
+
+ 
+
+nav {
+
+    border: 2px solid #333;
+
+    border-radius: 2rem;
+
+    /* giới hạn chiều ngang của nav */
+
+    max-width: 600px;
+
+    /* căn giữa cái hộp nav */
+
+    margin: 0 auto 1rem;
+
+    font-size: 3rem;
+
+    line-height: 7rem;
+
+}
+
+ 
+
+h2 {
+
+    padding: 1rem;
+
+    background-color: gold;
+
+    /* bo 2 góc phía trên*/
+
+    border-radius: 2rem 2rem 0 0;
+
+}
+
+ 
+
+ul {
+
+    list-style-type: none;
+
+}
+
+ 
+
+li {
+
+    border-top: 1px solid #333;
+
+}
+
+/* hiển thị mỗi mục menu là một khối để làm hiệu ứng cho đẹp */
+
+li a {
+
+    display: block;
+
+}
+
+li a,
+
+li a:visited {
+
+    text-decoration: none;
+
+    color: #333;
+
+}
+
+ 
+
+li a:hover,
+
+li a:focus {
+
+    background: #333;
+
+    color: whitesmoke;
+
+    cursor: pointer;
+
+}
+
+ 
+
+/* bo 2 góc dưới cho mục cuối của menu */
+
+li:last-child a{
+
+    border-radius: 0 0 2rem 2rem;
+
+}
