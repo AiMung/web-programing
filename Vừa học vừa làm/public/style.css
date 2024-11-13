@@ -1,0 +1,219 @@
+/* CSS tổng quan */
+* {
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    word-wrap: break-word;
+  }
+  
+  /* Cấu trúc các trang */
+  .pages {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f2f5;
+  }
+  
+  .page {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  /* Trang đăng nhập */
+  .login.page {
+    background-color: #0084ff;
+    background-image: url('image/26cb6bd8199a35b1a58737eb478c6dc1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 1;
+ 
+    transition: filter 0.3s ease-in-out;
+  }
+  
+  .login.page:hover {
+    scale: 3px;
+  }
+  
+  .greeting {
+    color: #ffffff;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 20px; /* Cố định vị trí phía trên */
+    width: 100%;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ cho chữ */
+  }
+  
+  .login.page .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 120px;
+    max-width: 400px;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .login.page .form:hover {
+    transform: scale(1.05); /* Hiệu ứng phóng to nhẹ khi hover */
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.3);
+  }
+  
+  .title {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  .usernameInput {
+    font-size: 1.2em;
+    padding: 12px;
+    width: 100%;
+    max-width: 300px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    text-align: center;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .usernameInput:focus {
+    border-color: #0084ff;
+    box-shadow: 0px 0px 10px rgba(0, 132, 255, 0.5); /* Hiệu ứng sáng lên khi focus */
+  }
+  
+  /* Trang chat */
+  .chat.page {
+    background-color: #ffffff;
+    background-image: url('https://i.pinimg.com/736x/c9/35/55/c93555a6b3b0a0686a0b09d16e0bef5d.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    transition: background-position 0.5s ease-in-out;
+  }
+  
+  .chat.page:hover {
+    background-position: top center; /* Di chuyển hình nền khi hover */
+  }
+  
+  .chatArea {
+    flex: 1;
+    overflow-y: auto;
+    padding: 25px;
+    background-color: rgba(240, 243, 245, 0.9);
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.1);
+    min-height: 400px;
+    max-width: 600px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .chatArea:hover {
+    background-color: rgba(240, 242, 245, 1); /* Màu nền sáng hơn khi hover */
+    border-color: aqua;
+  }
+  
+  .messages {
+    font-size: 1.1em;
+    
+  }
+  
+  .message {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    border-radius: 20px;
+    margin-bottom: 8px;
+    background-color: #029bf4;
+    max-width: 100%;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .message:hover {
+    background-color: #d0d4da; /* Màu nền nhạt hơn khi hover */
+    transform: scale(1.02); /* Hiệu ứng phóng to khi hover */
+  }
+  
+  .username {
+    font-weight: bold;
+    color: #0084ff;
+    margin-right: 10px;
+  }
+  
+  .inputMessage {
+    width: calc(100% - 200px);
+    padding: 12px 15px;
+    font-size: 1.1em;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 10px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .inputMessage:focus {
+    border-color: #0084ff;
+    box-shadow: 0px 0px 10px rgba(0, 132, 255, 0.5);
+  }
+
+  .log {
+    font-size: 1.5rem;
+    text-align: center;
+    
+    transition: all 0.3s ease-in-out; /* Đảm bảo các hiệu ứng chuyển đổi mượt mà */
+  }
+  
+  /* Hiệu ứng hover lấp lánh */
+  .log:hover {
+    animation: glow 1s ease-in-out infinite; /* Kích hoạt hiệu ứng lấp lánh */
+  }
+  
+  /* Animation tạo hiệu ứng lấp lánh */
+  @keyframes glow {
+    0% {
+      text-shadow: 0 0 5px #bfff00, 0 0 10px hsl(8, 89%, 51%), 0 0 15px #e510d7;
+      color: #0084ff;
+    }
+    50% {
+      text-shadow: 0 0 20px #bfff00, 0 0 10px hsl(8, 89%, 51%), 0 0 15px #e510d7;
+      color: #00b3ff;
+    }
+    100% {
+      text-shadow: 0 0 5px #bfff00, 0 0 10px hsl(8, 89%, 51%), 0 0 15px #e510d7;
+      color: #0084ff;
+    }
+  }
+  
